@@ -59,6 +59,11 @@ public class FlowDemoAPresenter extends ViewPresenter<FlowDemoAView> {
     });
   }
 
+  @Override
+  protected void onSave(Bundle outState) {
+    super.onSave(outState);
+  }
+
   @Override public void dropView(FlowDemoAView view) {
     super.dropView(view);
   }
