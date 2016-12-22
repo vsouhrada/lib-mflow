@@ -1,0 +1,45 @@
+ext {
+
+    libVersion = '1.0.0'
+
+    buildToolsVersion = "25.0.2"
+    compileSdkVersion = 24
+    minSdkVersion = 18
+    targetSdkVersion = 24
+    sourceCompatibility = JavaVersion.VERSION_1_7
+    targetCompatibility = JavaVersion.VERSION_1_7
+    encoding = "UTF-8"
+
+
+    /// Google -> Android
+    supportLibsVersion = '24.2.1'
+
+    // Domain
+    daggerVersion = '1.2.1'
+    gsonVersion = '2.2.4'
+    flowVersion = '0.7'
+    mortarVersion = '0.16'
+    rxJavaVersion = '0.16.1'
+    butterknifeVersion = '4.0.1'
+    ottoVersion = '1.3.5'
+    pageIndicatorVersion = '0.0.8'
+
+    supportDependencies = [
+            supportV4    : "com.android.support:design:${supportLibsVersion}",
+            appcompat7   : "com.android.support:appcompat-v7:${supportLibsVersion}"
+    ]
+
+    domainDependencies = [
+            daggerCompiler       : "com.squareup.dagger:dagger-compiler:${daggerVersion}",
+            dagger               : "com.squareup.dagger:dagger:${daggerVersion}",
+            gson                 : "com.google.code.gson:gson:${gsonVersion}",
+            flow                 : "com.squareup.flow:flow:${flowVersion}",
+            mortar               : "com.squareup.mortar:mortar:${mortarVersion}",
+            rxjavaCore           : "com.netflix.rxjava:rxjava-core:${rxJavaVersion}",
+            rxjavaAndroid        : "com.netflix.rxjava:rxjava-android:${rxJavaVersion}",
+            butterknife          : "com.jakewharton:butterknife:${butterknifeVersion}",
+            otto                 : "com.squareup:otto:${ottoVersion}",
+            pageIndicator        : "com.romandanylyk:pageindicatorview:${pageIndicatorVersion}"
+    ]
+
+}

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.vsouhrada.android.lib.mflow.demo.functions.save_state.mvp.view.MasterView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+  <EditText
+          android:id="@+id/entered_text"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="@string/saved_state_enter_text_hint"
+          />
+
+  <Button
+          android:id="@+id/new_screen_button"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/entered_text"
+          android:layout_centerHorizontal="true"
+          android:text="@string/saved_state_show_next_screen_button"
+          />
+
+
+</com.vsouhrada.android.lib.mflow.demo.functions.save_state.mvp.view.MasterView>

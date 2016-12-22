@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.vsouhrada.android.lib.mflow.demo.core.mvp.view.FeaturesOverview
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        >
+
+  <Button
+          android:id="@+id/ab_demo_button"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/features_action_bar"
+          />
+
+  <Button
+          android:id="@+id/ab_save_state_button"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/features_save_state"
+          />
+
+  <Button
+          android:id="@+id/ab_flow_demo_button"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/features_flow"
+          />
+
+  <Button
+          android:id="@+id/nested_button"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/features_nested_views"
+          />
+
+  <Button
+          android:id="@+id/tab_pager_button"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/features_tab_pager"
+          />
+
+  <Button
+          android:id="@+id/activity_button"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/features_activity"
+          />
+
+  <Button
+          android:id="@+id/dialogs_button"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/features_dialog"
+          />
+
+</com.vsouhrada.android.lib.mflow.demo.core.mvp.view.FeaturesOverview>

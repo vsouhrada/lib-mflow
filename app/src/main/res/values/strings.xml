@@ -1,0 +1,54 @@
+<resources>
+  <string name="app_name">MFlow</string>
+
+  <string name="features_ab_title">Features Overview</string>
+  <string name="features_action_bar">ActionBar</string>
+  <string name="features_save_state">Save State</string>
+  <string name="features_flow">Flow</string>
+  <string name="features_nested_views">Nested</string>
+  <string name="features_tab_pager">Tab Pager</string>
+  <string name="features_activity">Start Activity</string>
+  <string name="features_dialog">Dialogs</string>
+
+  <string name="ab_demo_main_title">AB Demo</string>
+  <string name="ab_demo_main_menu_item_camera">Camera</string>
+  <string name="ab_demo_main_menu_item_smile">:)</string>
+  <string name="ab_demo_main_menu_item_new">New</string>
+  <string name="ab_demo_home_btn_title">No Home Btn</string>
+  <string name="ab_demo_menu_xml_title">Menu from XML</string>
+  <string name="ab_demo_menu_item_hide">Hide Menu Item</string>
+  <string name="ab_demo_menu_item_clicked">Click</string>
+  <string name="ab_demo_up_custom_parent_title">Custom Parent</string>
+
+  <string name="flow_demo_a_title">Flow A</string>
+  <string name="flow_demo_b_title">Flow B</string>
+  <string name="flow_demo_c_title">Flow C</string>
+  <string name="flow_demo_button_forward">Forward</string>
+  <string name="flow_demo_button_back">Back</string>
+  <string name="flow_demo_button_reset">Reset</string>
+  <string name="flow_demo_button_replace">Replace</string>
+  <string name="flow_demo_custom_back_action_toast">Custom back pressed action was called!</string>
+
+  <string name="nested_view_title">Nested Views</string>
+  <string name="nested_view_first_child_hint_enter_text">Enter text here!</string>
+  <string name="nested_view_first_child_send_button">Send</string>
+
+  <string name="saved_state_enter_text_hint">Enter text</string>
+  <string name="saved_state_show_next_screen_button">Show new screen</string>
+  <string name="saved_state_entered_text_info">You should see your entered text when you will return back to the previous screen
+    .\n\nEntered text is:</string>
+
+  <string name="tab_pager_title">Tab Pager</string>
+  <string name="tab_pager_tab1_title">Tab no 1</string>
+  <string name="tab_pager_tab2_title">Tab no 2</string>
+
+  <string name="activity_flow_title">Activity Flow</string>
+  <string name="activity_flow_finish">Finish Activity</string>
+
+  <string name="dialog_demo_abc_title">Dialog Demo</string>
+  <string name="dialog_demo_button_show_alert_dialog">Show Dialog</string>
+  <string name="dialog_demo_title">Demo Alert Dialog</string>
+  <string name="dialog_demo_message">This is Demo Alert Dialog</string>
+
+
+</resources>

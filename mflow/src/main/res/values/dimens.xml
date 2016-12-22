@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <!-- ************************************* -->
+  <!--      Navigation Drawer                -->
+  <!-- ************************************* -->
+
+  <dimen name="navigation_drawer_width">240dp</dimen>
+
+</resources>

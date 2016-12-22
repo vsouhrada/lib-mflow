@@ -1,0 +1,113 @@
+apply plugin: 'com.android.library'
+apply plugin: 'maven'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName rootProject.ext.libVersion
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    compileOptions {
+        encoding rootProject.ext.encoding
+        sourceCompatibility rootProject.ext.sourceCompatibility
+        targetCompatibility rootProject.ext.targetCompatibility
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/services/javax.annotation.processing.Processor'
+        exclude 'LICENSE.txt'
+    }
+
+}
+
+dependencies {
+    def domainDeps = rootProject.ext.domainDependencies
+    def supportDeps = rootProject.ext.supportDependencies
+
+    provided domainDeps.daggerCompiler
+
+    compile supportDeps.supportV4
+    compile supportDeps.appcompat7
+
+    compile domainDeps.flow
+    compile domainDeps.gson
+    compile domainDeps.rxjavaCore
+    compile domainDeps.rxjavaAndroid
+
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    testCompile 'junit:junit:4.12'
+}
+
+
+task sourcesJar(type: Jar) {
+    classifier = 'sources'
+    from android.sourceSets.main.java.srcDirs
+}
+
+artifacts {
+    archives sourcesJar
+}
+
+configurations {
+    archives {
+        extendsFrom configurations.default
+    }
+}
+
+uploadArchives {
+    configuration = configurations.archives
+    repositories.mavenDeployer {
+        //beforeDeployment { MavenDeployment deployment -> signing.signPom(deployment) }
+
+        repository(url: nexusRepo) {
+            authentication(userName: nexusUsername, password: nexusPassword)
+        }
+
+        snapshotRepository(url: nexusSnapshotRepo) {
+            authentication(userName: nexusUsername, password: nexusPassword)
+        }
+
+        pom.project {
+            groupId 'com.vsouhrada.android.lib.mflow'
+            artifactId 'lib-mflow'
+            version version
+            name 'com.vsouhrada.android.lib.mflow'
+            description 'Android Framework - Mortar & Flow extension'
+            url 'https://github.com/vsouhrada/lib-mflow'
+            inceptionYear '2016'
+
+            licenses {
+                license {
+                    name 'The Apache Software License, Version 2.0'
+                    url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                    distribution 'repo'
+                }
+            }
+
+            developers {
+                developer {
+                    id 'vsouhrada'
+                    name 'Vaclav Souhrada'
+                    email 'v.souhrada@gmail.com'
+                }
+            }
+        }
+    }
+}

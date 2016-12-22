@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <array name="drawer_items">
+    <item>@string/features_action_bar</item>
+    <item>@string/features_save_state</item>
+    <item>@string/features_flow</item>
+    <item>@string/features_nested_views</item>
+    <item>@string/features_tab_pager</item>
+    <item>@string/features_activity</item>
+    <item>@string/features_dialog</item>
+  </array>
+
+</resources>

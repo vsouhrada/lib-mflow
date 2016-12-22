@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.vsouhrada.android.lib.mflow.demo.functions.nested.mvp.view.NestedView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/brand_middle_fresh"
+        >
+
+  <com.vsouhrada.android.lib.mflow.demo.functions.nested.mvp.view.NestedFirstChildView
+          android:id="@+id/first_nested_child"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignParentTop="true"
+          android:gravity="center_horizontal"
+          android:background="@color/white"
+          >
+
+    <EditText
+            android:id="@+id/entered_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:hint="@string/nested_view_first_child_hint_enter_text"
+            />
+
+    <Button
+            android:id="@+id/send_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/entered_msg"
+            android:text="@string/nested_view_first_child_send_button"
+            />
+
+  </com.vsouhrada.android.lib.mflow.demo.functions.nested.mvp.view.NestedFirstChildView>
+
+  <com.vsouhrada.android.lib.mflow.demo.functions.nested.mvp.view.NestedSecondChildView
+          android:id="@+id/second_nested_child"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="20dp"
+          android:layout_below="@id/first_nested_child"
+          android:background="@color/white"
+          >
+
+    <TextView
+            android:id="@+id/message_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold"
+            tools:text="Entered Message"
+            />
+
+
+  </com.vsouhrada.android.lib.mflow.demo.functions.nested.mvp.view.NestedSecondChildView>
+
+
+</com.vsouhrada.android.lib.mflow.demo.functions.nested.mvp.view.NestedView>

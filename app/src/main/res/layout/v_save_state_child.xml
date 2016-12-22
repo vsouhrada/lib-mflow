@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.vsouhrada.android.lib.mflow.demo.functions.save_state.mvp.view.ChildView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+  <TextView
+          android:id="@+id/screen_info"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/saved_state_entered_text_info"
+          />
+
+  <TextView
+          android:id="@+id/text"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="15dp"
+          android:layout_below="@id/screen_info"
+          />
+
+
+</com.vsouhrada.android.lib.mflow.demo.functions.save_state.mvp.view.ChildView>

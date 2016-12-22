@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.gk_software.core.android.lib_mflow.demo.functions.actionbar.mvp.view.ABDemoMainView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+  <Button
+          android:id="@+id/ab_demo_home_button"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/ab_demo_home_btn_title"
+          />
+
+  <Button
+          android:id="@+id/ab_demo_menu_xml_button"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/ab_demo_home_button"
+          android:text="@string/ab_demo_menu_xml_title"
+          />
+
+  <Button
+          android:id="@+id/ab_demo_custom_parent"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/ab_demo_menu_xml_button"
+          android:text="@string/ab_demo_up_custom_parent_title"
+          />
+
+</com.gk_software.core.android.lib_mflow.demo.functions.actionbar.mvp.view.ABDemoMainView>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.vsouhrada.android.lib.mflow.demo.functions.flow.mvp.view.FlowDemoCView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        >
+
+  <Button
+          android:id="@+id/flow_back_button"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/flow_demo_button_back"
+          />
+
+  <Button
+          android:id="@+id/flow_reset_button"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/flow_demo_button_reset"
+          />
+
+  <Button
+          android:id="@+id/flow_replace_button"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/flow_demo_button_replace"
+          />
+
+</com.vsouhrada.android.lib.mflow.demo.functions.flow.mvp.view.FlowDemoCView>
