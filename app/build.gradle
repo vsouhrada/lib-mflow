@@ -8,7 +8,7 @@ dependencies {
     def domainDeps = rootProject.ext.domainDependencies
     def supportDeps = rootProject.ext.supportDependencies
 
-    provided domainDeps.daggerCompiler
+    apt domainDeps.daggerCompiler
 
     compile domainDeps.dagger
     compile domainDeps.butterknife

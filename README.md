@@ -12,6 +12,19 @@ Please keep in a mind, that library is using these versions of main libs:
 The main purpose of the library (why I created it) is to bring the MVP pattern for Android, which 
 provides libraries Mortar + Flow (MFow).
 
+Library contains a demo app which demonstrate all features provides by the lib-mflow.
+
+<p align="center">
+  <img src="doc/github/img/dashboard.png" width="182" height="357"/>
+  <img src="doc/github/img/drawer_opened.png" width="182" height="357"/>
+  <img src="doc/github/img/nested.png" width="182" height="357"/>
+</p>
+
+<p align="center">
+  <img src="doc/github/img/save_state_01.png" width="182" height="357"/>
+  <img src="doc/github/img/save_state_02.png" width="182" height="357"/>
+</p>
+
 In short the **Flow** is a small library that helps with describing an app as a collection of 
 moderately independent screens. These screens can be pushed onto a concrete backstack to provide navigation history.
 If Flow tells you where to go, Mortar tells you what to build when you get there. Mortar is a 

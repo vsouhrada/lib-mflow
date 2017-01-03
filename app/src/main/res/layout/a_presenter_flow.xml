@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.gk_software.core.android.lib_mflow.demo.functions.activity.mvp.view.FlowActivityCoreView
+<com.vsouhrada.android.lib.mflow.demo.functions.activity.mvp.view.FlowActivityCoreView
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/content_screen"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-</com.gk_software.core.android.lib_mflow.demo.functions.activity.mvp.view.FlowActivityCoreView>
+</com.vsouhrada.android.lib.mflow.demo.functions.activity.mvp.view.FlowActivityCoreView>

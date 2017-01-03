@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<com.gk_software.core.android.lib_mflow.demo.functions.actionbar.mvp.view.ABDemoMainView
+<com.vsouhrada.android.lib.mflow.demo.functions.actionbar.mvp.view.ABDemoMainView
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -29,4 +29,4 @@
           android:text="@string/ab_demo_up_custom_parent_title"
           />
 
-</com.gk_software.core.android.lib_mflow.demo.functions.actionbar.mvp.view.ABDemoMainView>
+</com.vsouhrada.android.lib.mflow.demo.functions.actionbar.mvp.view.ABDemoMainView>
